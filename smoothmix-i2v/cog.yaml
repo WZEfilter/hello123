@@ -1,0 +1,17 @@
+build:
+  gpu: true
+  cuda: "12.1"
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.1.0"
+    - "torchvision==0.16.0"
+    - "diffusers>=0.31.0"
+    - "transformers>=4.44.0"
+    - "accelerate>=0.33.0"
+    - "safetensors>=0.4.0"
+    - "imageio[ffmpeg]>=2.34.0"
+    - "pillow>=10.0.0"
+    - "numpy>=1.24.0"
+    - "huggingface_hub>=0.20.0"
+
+predict: "predict.py:Predictor"
